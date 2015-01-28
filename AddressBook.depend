@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1422415611 source:/home/jamianv/Cplusplus files/AddressBook/main.cpp
+	<iostream>
+	<fstream>
+	"addressType.h"
+	"personType.h"
+	"dateType.h"
+	"extPersonType.h"
+	"addressBookType.h"
+
+1422346640 source:/home/jamianv/Cplusplus files/AddressBook/addressType.cpp
+	<iostream>
+	"addressType.h"
+
+1422346630 /home/jamianv/Cplusplus files/AddressBook/addressType.h
+	<string>
+
+1422348407 source:/home/jamianv/Cplusplus files/AddressBook/personType.cpp
+	<iostream>
+	"personType.h"
+
+1422348407 /home/jamianv/Cplusplus files/AddressBook/personType.h
+	<string>
+
+1422348062 /home/jamianv/Cplusplus files/AddressBook/dateType.h
+
+1422348062 source:/home/jamianv/Cplusplus files/AddressBook/dateType.cpp
+	<iostream>
+	"dateType.h"
+
+1422415268 source:/home/jamianv/Cplusplus files/AddressBook/extPersonType.cpp
+	<iostream>
+	"extPersonType.h"
+
+1422415268 /home/jamianv/Cplusplus files/AddressBook/extPersonType.h
+	<string>
+	"personType.h"
+	"dateType.h"
+	"addressType.h"
+
+1422415626 source:/home/jamianv/Cplusplus files/AddressBook/addressBookType.cpp
+	"addressBookType.h"
+
+1422416038 /home/jamianv/Cplusplus files/AddressBook/addressBookType.h
+	<iostream>
+	<fstream>
+	"extPersonType.h"
+
