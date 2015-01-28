@@ -36,7 +36,15 @@ void extPersonType::printExtPersonType() const{
     cout << "Phone #: " << phoneNum;
 }
 
+void extPersonType::printNames() const{
+    name.print();
+}
+
 string extPersonType::getLastName() const{
     return name.getLastName();
+}
+
+int extPersonType::getBday() const{
+    return birthday.getMonth();
 }
 

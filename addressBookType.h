@@ -11,7 +11,8 @@ class addressBookType: public extPersonType
         addressBookType();
         void setInfo(string);
         void nameSort();
-        extPersonType nameSearch(string);
+        void nameSearch(string);
+        void bDaySearch(int);
         void printInfo() const;
         void printNames() const;
     private:

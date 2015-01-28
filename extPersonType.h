@@ -17,9 +17,9 @@ class extPersonType
                         int day, int year, string addr, string cit,
                         string sta, int zip, string pType, long int phone);
         void printExtPersonType() const;
+        void printNames() const;
         string getLastName() const;
-
-
+        int getBday() const;
     private:
         personType name;
         dateType birthday;

@@ -30,6 +30,8 @@ void addressBookType::printInfo() const{
     }
 }
 
+
+
 void addressBookType::nameSort(){
     extPersonType temp;
     for(int i = 1; i < MAX_ENTRIES; i++){
@@ -43,11 +45,20 @@ void addressBookType::nameSort(){
     }
 }
 
-extPersonType addressBookType::nameSearch(string choice){
+void addressBookType::nameSearch(string choice){
+    cout << "Returning results for " << choice << ": "<< endl;
     for (int i = 0; i < MAX_ENTRIES; i++){
-        if(addrBook[i].getLastName() == choice){
-            return addrBook[i];
+        if(addrBook[i].getLastName() == choice)
+            addrBook[i].printExtPersonType();
+    }
+}
+
+void addressBookType::bDaySearch(int month){
+    for(int i = 0; i < MAX_ENTRIES; i++){
+        if(addrBook[i].getBday() == month){
+            addrBook[i].printNames();
         }
     }
 }
+
 
