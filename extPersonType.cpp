@@ -48,3 +48,7 @@ int extPersonType::getBday() const{
     return birthday.getMonth();
 }
 
+string extPersonType::getType() const{
+    return type;
+}
+

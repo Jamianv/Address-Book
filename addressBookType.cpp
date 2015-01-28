@@ -57,8 +57,27 @@ void addressBookType::bDaySearch(int month){
     for(int i = 0; i < MAX_ENTRIES; i++){
         if(addrBook[i].getBday() == month){
             addrBook[i].printNames();
+            cout << endl;
         }
     }
 }
 
+void addressBookType::printRange(string first, string last) const{
+    for(int i = 0; i < MAX_ENTRIES; i++){
+        if(first <= addrBook[i].getLastName()
+            && addrBook[i].getLastName() <= last){
+            addrBook[i].printNames();
+            cout << endl;
+        }
+    }
+}
+
+void addressBookType::printType(string choice) const{
+    for(int i = 0; i < MAX_ENTRIES; i++){
+            if(addrBook[i].getType() == choice){
+                addrBook[i].printNames();
+                cout << endl;
+            }
+    }
+}
 

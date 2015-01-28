@@ -19,6 +19,7 @@ class extPersonType
         void printExtPersonType() const;
         void printNames() const;
         string getLastName() const;
+        string getType() const;
         int getBday() const;
     private:
         personType name;

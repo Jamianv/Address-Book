@@ -15,6 +15,8 @@ class addressBookType: public extPersonType
         void bDaySearch(int);
         void printInfo() const;
         void printNames() const;
+        void printRange(string, string) const;
+        void printType(string) const;
     private:
         static const int MAX_ENTRIES = 2;
         extPersonType addrBook[MAX_ENTRIES];
